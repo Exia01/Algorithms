@@ -1,4 +1,5 @@
 from collections import deque
+import random
 
 # # Assignment: Square the Values
 
@@ -69,14 +70,61 @@ from collections import deque
 # print(rotateVals(arr, x))
 
 # Assignment: Number to strings
-arr = [-1, -3, 2, 9, 10, -3]
+# arr = [-1, -3, 2, 9, 10, -3]
 
 
-def printOutArr(arr):
-    for num in range(0,len(arr)):
-        if arr[num] < 0:
-            arr[num] = "Dojo"
-    return arr
+# def printOutArr(arr):
+#     for num in range(0,len(arr)):
+#         if arr[num] < 0:
+#             arr[num] = "Dojo"
+#     return arr
 
 
-print(printOutArr(arr))
+# print(printOutArr(arr))
+
+# Assignment: Random Array
+# arr = []
+# a = 10
+# b = 0
+
+
+# def createArr(a, b, arr):
+#     while b <= a:
+#         arr.append(random.randint(0, 100))
+#         b += 1
+#     return arr
+# print(createArr(a, b, arr))
+
+# Assignment: Swapping two Values
+# x = [2, 3, 5, 7, 6]
+
+# def swapVals(arr):
+#     temp =  arr[len(arr)-1]
+#     arr[len(arr)-1] = arr[0]
+#     arr[0] = temp
+#     return arr
+
+# print(swapVals(x))
+
+
+# # Assignment: Reversing Array
+
+
+# x = [1, 2, 3, 4, 5]
+
+# def reversing(arr):
+#     size = len(arr)  # Get the length of the sequence
+#     endOfArrNum = size -1 #we are taking the lenght of the array and getting the positon on the list in this case '5'
+#     its = size//2 # number of iterations rquired
+#     for i in range(0, its): # will run 4 times
+#         # print(its)
+#         # print(arr)
+#         # print(endOfArrNum)
+#         temp = arr[endOfArrNum]
+#         arr[endOfArrNum] = arr[i]
+#         arr[i] = temp
+#         endOfArrNum-= 1
+#     return arr
+
+
+# print(reversing(x))
