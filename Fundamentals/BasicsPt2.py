@@ -128,3 +128,44 @@ import random
 
 
 # print(reversing(x))
+
+
+# # Assignment: Reversing Array
+# arr = [1, 3, 5, 7]
+# x = 10
+# y = 2
+
+# #  for i in reversed(arr):
+# #         print(i)
+# def insertNum(arr, x, y):
+#     # arr.insert(y,x)
+#     # return arr
+
+#     # for i in reversed(arr):
+#     #     print(i)
+#     arr.append(0)
+#     for i in range(len(arr)-1, 0, -1):
+#         if arr[i] == arr[y]:
+#             break
+#         else:
+#             print(arr)
+#             arr[i] = arr[i-1]
+#     arr[y] = x
+#     return arr
+
+# print(insertNum(arr,x,y))
+
+# # Assignment: removing negatives
+
+arr = [0, -1, 2, -3, 4, -5, 6]
+count = 0 
+
+
+def removeNegatives(arr):
+    for num in arr:
+        if num < 0:
+            arr[arr.index(num)] = - num
+    return arr
+
+
+print(removeNegatives(arr))
