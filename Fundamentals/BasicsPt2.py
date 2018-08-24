@@ -169,3 +169,12 @@ def removeNegatives(arr):
 
 
 print(removeNegatives(arr))
+
+Nombre = "Tany"
+def printTany(name):
+    if name == "Tany":
+        print("Hola Tany")
+    else:
+         print("No reconocemos el nombre")
+
+print(printTany("heather"))
