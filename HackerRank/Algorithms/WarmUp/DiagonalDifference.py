@@ -16,4 +16,5 @@ def diagonalDifference(arr, n):
     difference = sum(row[i] - row[-i - 1] for i, row in enumerate(arr))
     return abs(difference)
  
-print(diagonalDifference(arr,n))
+print(diagonalDifference(arr, n))
+

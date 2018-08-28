@@ -7,3 +7,5 @@ def simpleArraySum(ar):
     return total
 
 print(simpleArraySum(ar))
+
+print(sum(ar))
