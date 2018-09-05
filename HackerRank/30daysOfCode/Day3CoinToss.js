@@ -1,45 +1,45 @@
-// class coinToss{
-//     tossACoin() {
-//         let toss = Math.floor((Math.random() * 10) % 2)
-//         if (toss == 0) {
-//             console.log("Heads");
+class coinToss{
+    tossACoin() {
+        let toss = Math.floor((Math.random() * 10) % 2)
+        if (toss == 0) {
+            console.log("Heads");
 
-//         } else {
-//             console.log("Tails")
-//         }
-//     }
+        } else {
+            console.log("Tails")
+        }
+    }
 
-// }
+}
 
-// game1 = new coinToss
-// game1.tossACoin()
-// game1.tossACoin()
-// game1.tossACoin()
-// game1.tossACoin()
-// game1.tossACoin()
-// game1.tossACoin()
-
-
-// function printWeird(n) {
-//     let N = parseInt(n, 10);
-//     if (N % 2 !== 0) {
-//         return "Weird"
-//     } else {
-//         if (N >= 2 && N <= 5) {
-//             return "Not Weird"
-//         }
-//         if (N >= 6 && N <= 20) {
-//             return "Weird"
-//         }
-//         if (N >= 21) {
-//             return "Not Weird"
-//         }
-//     }
-
-// }
+game1 = new coinToss
+game1.tossACoin()
+game1.tossACoin()
+game1.tossACoin()
+game1.tossACoin()
+game1.tossACoin()
+game1.tossACoin()
 
 
-// console.log(printWeird(20))
+function printWeird(n) {
+    let N = parseInt(n, 10);
+    if (N % 2 !== 0) {
+        return "Weird"
+    } else {
+        if (N >= 2 && N <= 5) {
+            return "Not Weird"
+        }
+        if (N >= 6 && N <= 20) {
+            return "Weird"
+        }
+        if (N >= 21) {
+            return "Not Weird"
+        }
+    }
+
+}
+
+
+console.log(printWeird(20))
 
 
 function performOperation(secondInteger, secondDecimal) {
