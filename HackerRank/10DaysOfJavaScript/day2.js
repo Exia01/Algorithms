@@ -1,46 +1,25 @@
 // // function
 
 str = 'javascriptloops';
-// function vowelsAndConsonants(str) {
-//     let vowels = ['a', 'e', 'i', 'o', 'u'];
-//     var first = ''
-//     var second = ''
-//   for (let i = 0; i < str.length; i++) {
-//     if (vowels.includes(str[i])) {
-//         first += str[i] + "\n"
+function vowelsAndConsonants(str) {
+    let vowels = ['a', 'e', 'i', 'o', 'u'];
+    var first = ''
+    var second = ''
+  for (let i = 0; i < str.length; i++) {
+    if (vowels.includes(str[i])) {
+        first += str[i] + "\n"
         
-//     }
-//     }
-//     for (let j = 0; j < str.length; j++) {
-//         if (!vowels.includes(str[j])) {
-//             second += str[j] + "\n"
-//       }
-//     }
-//     return first + second
-// }
-// console.log(vowelsAndConsonants(str));
-let s = 'javascriptloops';
-function vowelsAndConsonants(s) {
-    let vowelsArr = ['a', 'e', 'i', 'o', 'u'];
-    let outputVowelsArr = [];
-    let outputConstArr = [];
-    
-    for (var i = 0; i < s.length; i++) {
-        for (var j of vowelsArr) {
-            if (s[i] == j) {
-                console.log(s[i]);
-                outputVowelsArr.push(s[i]);
-            }
-            // else {
-            //     console.log(s[i]);
-            //     outputConstArr.push(s[i]);
-            // }
-        }
-		
     }
+    }
+    for (let j = 0; j < str.length; j++) {
+        if (!vowels.includes(str[j])) {
+            second += str[j] + "\n"
+      }
+    }
+    return first + second
 }
+console.log(vowelsAndConsonants(str));
 
-console.log(vowelsAndConsonants(s))
 // If-Else
 // let score = 30;
 // function getGrade(score) {
