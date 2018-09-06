@@ -1,41 +1,41 @@
-// // For loops
-// function printWhileLoop() {
-//   let x = 0
-//   while (x < 5) {
-//     if()
-//     console.log("The value of x is ", x)
-//     x++
+// For loops
+function printWhileLoop() {
+  let x = 0
+  while (x < 5) {
+    if()
+    console.log("The value of x is ", x)
+    x++
 
-//   }
-// }
-// printWhileLoop();
+  }
+}
+printWhileLoop();
 
-// function doWhileLoop() {
-//   let i = 0
-//   let text = ''
-//   do {
-//     text += "The number is " + i + "\n"
-//     i++;
-//     console.log(text)
-// }
-//   while (i < 5);
-// } 
+function doWhileLoop() {
+  let i = 0
+  let text = ''
+  do {
+    text += "The number is " + i + "\n"
+    i++;
+    console.log(text)
+}
+  while (i < 5);
+} 
 
-// doWhileLoop()
+doWhileLoop()
 
-// function practiceForLoop() {
-//   s = ''
-//   for (let x = 0; x < 20; x++) {
-//     s += "The value of x is " + x + "\n"
-//     for (let x = 0; x < 20; x++){
+function practiceForLoop() {
+  s = ''
+  for (let x = 0; x < 20; x++) {
+    s += "The value of x is " + x + "\n"
+    for (let x = 0; x < 20; x++){
 
-//     }
-//   }
-//   console.log("For-loop finished.")
-//   return s
-// }
+    }
+  }
+  console.log("For-loop finished.")
+  return s
+}
 
-// console.log(practiceForLoop())
+console.log(practiceForLoop())
 
 function coordinates() {
   s = ''

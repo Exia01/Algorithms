@@ -79,7 +79,7 @@ sixtosCar.isTheCarON = true;
 console.log(sixtosCar.isTheCarON)
 
 sixtosCar.brake = function () {
-    console.log("Frena por la puchica Sixto")
+    console.log("Frena por la puchica Sixto me vas a joder el carro")
 }
 
 sixtosCar.brake()
@@ -93,13 +93,13 @@ console.log(Camry.maxMilesperFillUp())
 
 
 
-function solve(meal_cost, tip_percent, tax_percent) {
-    let tax = meal_cost * tax_percent
-    let meal = meal_cost + tax
-    let tip = meal * tax
-    let total = tax + meal + tip
+// function solve(meal_cost, tip_percent, tax_percent) {
+//     let tax = meal_cost * tax_percent
+//     let meal = meal_cost + tax
+//     let tip = meal * tax
+//     let total = tax + meal + tip
     
-    console.log("The total meal cost is " + total + " dollars.")
+//     console.log("The total meal cost is " + total + " dollars.")
     
 
-}
+// }
