@@ -2,8 +2,8 @@
 Note: You may assume the string contains only lowercase alphabets.
 */
 
-let str1 = 'anagram'
-let str2 = 'nagaram'
+let str1 = 'foobar'
+let str2 = 'barfoo'
 
 function validAnagram(str1, str2) {
 
@@ -26,12 +26,17 @@ function validAnagram(str1, str2) {
         If the char already exist then we will increase the number value by 1 */
     }
     // console.log(lookup)
+    /* Thiw for of loop will compare each character to the second str -> str2 along with the frequency count.  */
     for (let char in str2) {
-        if (!(str2[char] in lookup)) {
+        let letter = str2[char]
+        if (!(lookup[letter])) {
             return false
+        } else {
+            lookup[letter] -= 1
         }
-        console.log(char)
-        console.log(lookup[char])
+        // console.log(lookup[letter])
+        /* when we encounter a 0 we know the letter does not exist anymore or we have already checked it off */
+        // console.log(lookup)
     }
     return true
 }
