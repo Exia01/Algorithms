@@ -96,6 +96,9 @@ function CountUniqueValues3(arr) {
         return 0
     }
 
+    /* If the tests pass then we run a for of loop with a second variable as a pointer 
+    This only works if the array is sorted.
+    we scout the numbers ahead and make changes if the number is not the same. */
     let x = 0
     for (let num in arr) {
         if (arr[x] !== arr[num]){
