@@ -1,158 +1,158 @@
-// // we implement getters and setters on this lesson .
-// class Car {
-//   constructor(brand, maxSpeed, minSpeed, weight) {
-//     this.brand = brand;
-//     this.maxSpeed = maxSpeed;
-//     this.condition = 'A';
-//     this.isTheCarON = false;
-//     this.minSpeed = new Closerure(minSpeed);
-//     this.weight = new Closerure(weight);
-//     var minSpeed = minSpeed;
-//     var weight = weight;
-//     this.maxFuel = 16.0;
-//     this.currentFuel = 8.0;
-//     this.mpg = 26.4;
-//     this.numberOfPEople = 1;
+// we implement getters and setters on this lesson .
+class Car {
+  constructor(brand, maxSpeed, minSpeed, weight) {
+    this.brand = brand;
+    this.maxSpeed = maxSpeed;
+    this.condition = 'A';
+    this.isTheCarON = false;
+    this.minSpeed = new Closerure(minSpeed);
+    this.weight = new Closerure(weight);
+    var minSpeed = minSpeed;
+    var weight = weight;
+    this.maxFuel = 16.0;
+    this.currentFuel = 8.0;
+    this.mpg = 26.4;
+    this.numberOfPEople = 1;
 
-//     function Closerure(x) {
-//       return function(v) {
-//         if (v == undefined) {
-//           return x;
-//         } else {
-//           val = v;
-//         }
-//       };
+    function Closerure(x) {
+      return function(v) {
+        if (v == undefined) {
+          return x;
+        } else {
+          val = v;
+        }
+      };
+    }
+  }
+
+  //  getters
+  get getMaxSpeed() {
+    return this.maxSpeed;
+  }
+  get getMinSpeed() {
+    return this.minSpeed;
+  }
+  get getIsTheCarON() {
+    return this.isTheCarON;
+  }
+
+  // setters
+  set setMaxSpeed(maxSpeed) {
+    return this.maxSpeed;
+  }
+  set setMinSpeed(minSpeed) {
+    return this.minSpeed;
+  }
+  set setIsTheCarON(TestCar) {
+    return this.isTheCarON;
+  }
+
+  // set functionName(value) {
+  //     const parts = value.split(' ')
+  //     this.Name = parts[0]
+  //     this.Name = parts[1]
+  //     // or it could be done as such.
+  //     [this.name, this.name] = value.split(' ')
+  // }
+
+  driveCar() {
+    if (this.currentFuel >= 0.05) {
+      this.currentFuel -= 0.5;
+      return 'Driving';
+    } else {
+      return 'You have no Gas, consider adding some -> addGas()';
+    }
+  }
+  addGas() {
+    if (this.currentFuel <= 15.99) {
+      this.currentFuel += 0.5;
+      return 'Adding gas.';
+    } else {
+      return 'Car tank is full!';
+    }
+  }
+
+  turnTheCarOn() {
+    if (!this.isTheCarON) {
+      this.isTheCarON = true;
+      return 'The car is now on.';
+    } else {
+      return 'Car is already on, watch out for messing with the starter';
+    }
+  }
+  turnTheCarOff() {
+    if (this.isTheCarON) {
+      this.isTheCarON = false;
+      return 'The car is now Off.';
+    } else {
+      return 'Car is already Off';
+    }
+  }
+  wreckCondition(condition) {
+    this.condition = condition;
+  }
+
+  carBrand() {
+    return this.brand;
+  }
+
+  howManyMilesTillOutOfGas() {
+    return this.currentFuel * this.mpg;
+  }
+
+  maxMilesperFillUp() {
+    return this.maxFuel * this.mpg;
+  }
+
+  showStats() {
+    return (
+      'Brand:' +
+      this.brand +
+      '| Current Fuel: ' +
+      this.currentFuel +
+      '| Min Speed: ' +
+      this.minSpeed() +
+      '| Weight: ' +
+      this.weight() +
+      '| condition: ' +
+      this.condition
+    );
+  }
+  accelerate() {
+    this.maxSpeed += 10;
+  }
+}
+// Object.defineProperty(Car, 'stats', {
+//     get() {
+//         return `${this.maxSpeed} ${this.brand}`;
+//     },
+
+//     set(value) {
+//         [this.brand, this.maxSpeed] = value.split(" ");
 //     }
-//   }
+// });
 
-//   //  getters
-//   get getMaxSpeed() {
-//     return this.maxSpeed;
-//   }
-//   get getMinSpeed() {
-//     return this.minSpeed;
-//   }
-//   get getIsTheCarON() {
-//     return this.isTheCarON;
-//   }
+Camry = new Car('Toyota', 100, 0, 4079);
+console.log(Camry.getMaxSpeed);
 
-//   // setters
-//   set setMaxSpeed(maxSpeed) {
-//     return this.maxSpeed;
-//   }
-//   set setMinSpeed(minSpeed) {
-//     return this.minSpeed;
-//   }
-//   set setIsTheCarON(TestCar) {
-//     return this.isTheCarON;
-//   }
+// let user = {
+//     name: "John",
+//     surname: "Smith"
+//   };
 
-//   // set functionName(value) {
-//   //     const parts = value.split(' ')
-//   //     this.Name = parts[0]
-//   //     this.Name = parts[1]
-//   //     // or it could be done as such.
-//   //     [this.name, this.name] = value.split(' ')
-//   // }
+//   Object.defineProperty(user, 'fullName', {
+//     get() {
+//       return `${this.name} ${this.surname}`;
+//     },
 
-//   driveCar() {
-//     if (this.currentFuel >= 0.05) {
-//       this.currentFuel -= 0.5;
-//       return 'Driving';
-//     } else {
-//       return 'You have no Gas, consider adding some -> addGas()';
+//     set(value) {
+//       [this.name, this.surname] = value.split(" ");
 //     }
-//   }
-//   addGas() {
-//     if (this.currentFuel <= 15.99) {
-//       this.currentFuel += 0.5;
-//       return 'Adding gas.';
-//     } else {
-//       return 'Car tank is full!';
-//     }
-//   }
+//   });
 
-//   turnTheCarOn() {
-//     if (!this.isTheCarON) {
-//       this.isTheCarON = true;
-//       return 'The car is now on.';
-//     } else {
-//       return 'Car is already on, watch out for messing with the starter';
-//     }
-//   }
-//   turnTheCarOff() {
-//     if (this.isTheCarON) {
-//       this.isTheCarON = false;
-//       return 'The car is now Off.';
-//     } else {
-//       return 'Car is already Off';
-//     }
-//   }
-//   wreckCondition(condition) {
-//     this.condition = condition;
-//   }
+//   console.log(user.fullName); // John Smith
 
-//   carBrand() {
-//     return this.brand;
-//   }
-
-//   howManyMilesTillOutOfGas() {
-//     return this.currentFuel * this.mpg;
-//   }
-
-//   maxMilesperFillUp() {
-//     return this.maxFuel * this.mpg;
-//   }
-
-//   showStats() {
-//     return (
-//       'Brand:' +
-//       this.brand +
-//       '| Current Fuel: ' +
-//       this.currentFuel +
-//       '| Min Speed: ' +
-//       this.minSpeed() +
-//       '| Weight: ' +
-//       this.weight() +
-//       '| condition: ' +
-//       this.condition
-//     );
-//   }
-//   accelerate() {
-//     this.maxSpeed += 10;
-//   }
-// }
-// // Object.defineProperty(Car, 'stats', {
-// //     get() {
-// //         return `${this.maxSpeed} ${this.brand}`;
-// //     },
-
-// //     set(value) {
-// //         [this.brand, this.maxSpeed] = value.split(" ");
-// //     }
-// // });
-
-// Camry = new Car('Toyota', 100, 0, 4079);
-// console.log(Camry.getMaxSpeed);
-
-// // let user = {
-// //     name: "John",
-// //     surname: "Smith"
-// //   };
-
-// //   Object.defineProperty(user, 'fullName', {
-// //     get() {
-// //       return `${this.name} ${this.surname}`;
-// //     },
-
-// //     set(value) {
-// //       [this.name, this.surname] = value.split(" ");
-// //     }
-// //   });
-
-// //   console.log(user.fullName); // John Smith
-
-// //   for(let key in user) console.log(key); // name, surname
+//   for(let key in user) console.log(key); // name, surname
 
 class Person {
   constructor(age) {
