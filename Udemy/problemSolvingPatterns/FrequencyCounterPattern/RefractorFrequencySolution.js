@@ -38,7 +38,6 @@ function same(arr, arr2) {
 
     /* Here we start by looping through the keys "numbers" inside of the object frequencyCounter1 */
     for (let key in frequencyCounter1) {
-        console.log(frequencyCounter2[key])
         if (!(key ** 2 in frequencyCounter2)) {
             return false
         }
