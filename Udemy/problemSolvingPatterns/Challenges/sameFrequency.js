@@ -54,7 +54,7 @@ function sameFrequency(num, num2) {
 
     /*  First we match keys the */
     for (let key in frequencyCount) {
-        if (!key in frequencyCount2) {
+        if (!(key in frequencyCount2)) {
             return false
         }
         // console.log(frequencyCount[key], frequencyCount2[key])
