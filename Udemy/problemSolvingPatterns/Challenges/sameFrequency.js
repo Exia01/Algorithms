@@ -9,7 +9,7 @@ Time: O(N)
 //     num2: 281
 // }
 
-let num = 182456
+let num = '182456'
 let num2 = 2816545
 
 // let num = 51997788443322
@@ -18,10 +18,11 @@ let num2 = 2816545
 
 
 function sameFrequency(num, num2) {
-    /*  First we want to check if we're passing two numbers */
-    if (typeof (num) == String || typeof (num2) == String) {
-        return 'You Can\'t pass a string as an argument. Needs to be a number.'
-    }
+    /*  First if we wanted to explicitly check if we're passing two numbers */
+
+    // if (typeof (num) == String || typeof (num2) == String) {
+    //     return 'You Can\'t pass a string as an argument. Needs to be a number.'
+    // }
     if (num < 0 || num2 < 0) {
         return 'Please provide positive integers'
     }
