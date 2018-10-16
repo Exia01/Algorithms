@@ -43,8 +43,8 @@ function maxSubarraySum(arr, n) {
     // console.log(`maxSum is ${maxSum}`)
     for (let i = n; i < arr.length; i++){
         tempSum = tempSum - arr[i - n] + arr[i]
-        // console.log(`The Current Array is: ${arr[i]}`)
-        // console.log(`tempSum is: ${tempSum} \n`)
+        console.log(`The Current Array is: ${arr[i]}`)
+        console.log(`tempSum is: ${tempSum} \n`)
         maxSum = Math.max(maxSum, tempSum)
     }
     return maxSum
