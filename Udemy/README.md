@@ -1,8 +1,8 @@
 Tailored challenges videos from the "Algorithms and Data Structures Udemy Course" 
 
-The algorithms are divided in --two--, even --three-- diffent approches. 
+The algorithms are divided in --two-- or even --three-- diffent approches. 
 
-There are the 'Simple' solution:
+There is the 'Simple' solution:
     - May or may not be the most optimized way of doing it.
     - It is also the first attempt to solving the algorithm
 
