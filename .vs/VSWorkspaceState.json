@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\ByteOfComputerScience"
+    "\\Udemy",
+    "\\Udemy\\problemSolvingPatterns",
+    "\\Udemy\\problemSolvingPatterns\\Challenges",
+    "\\Udemy\\problemSolvingPatterns\\Challenges\\AreThereDuplicates"
   ],
-  "SelectedNode": "\\ByteOfComputerScience\\iFactorial.py",
+  "SelectedNode": "\\Udemy\\problemSolvingPatterns\\Challenges\\AreThereDuplicates\\areThereDuplicates.js",
   "PreviewInSolutionExplorer": false
 }

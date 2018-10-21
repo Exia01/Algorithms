@@ -18,9 +18,9 @@ function search(arr, val) {
     if (arr.length < 0) {
         return null
     }
-    if (!Number.isInteger(val)) {
-        return 'Value needs to be a number'
-    }
+    // if (!Number.isInteger(val)) {
+    //     return 'Value needs to be a number'
+    // }
 
     /* If all the test pass then we proceed forward */
     let min = 0;

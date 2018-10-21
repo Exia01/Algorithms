@@ -13,6 +13,7 @@ let arr = [-4, -3, -2, -1, 0, 1, 2, 3, 10]
 function sumZero(arr) {
     let left = 0;
     let right = arr.length - 1
+    console.log(right)
 
     /* Since the array is organized we can set this while loop to run between two points.arr
     If found it will return an array if not it will stop and return undefined */

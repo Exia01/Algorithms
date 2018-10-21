@@ -54,5 +54,9 @@ function AreThereDuplicates(testObj) {
 console.log(AreThereDuplicates(testObj, arg1, arg2))
 
 
+/* 
+Used the Spread Resource:
+ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
 
-
+ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters
+ */
