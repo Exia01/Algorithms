@@ -14,7 +14,7 @@ let log = function (x) {
     console.log(x)
 }
 let testObj = {
-    test1: [1, 2, 3, 4, 1, 2, 3, 5, 6, 8, 10, 1, 1, 2, 2],
+    test1: [1, 2, 3, 4, 1, 2, 3, 5, 6, 8, 10, 1, 1, 2, 2], //
     test2: 1,
     test3: ['a', 'b', 'c', 'a'],
 }
