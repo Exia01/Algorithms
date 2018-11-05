@@ -1,3 +1,4 @@
+let c = require('../../../Modules/consoleLog')
 /* Given an array of integers and a number, write a function called maxSubarraySum.
 The function finds the maximun of a subarray with the length of number passed to the function. 
 
@@ -6,9 +7,6 @@ The function finds the maximun of a subarray with the length of number passed to
 maxSubarraySum([100,200,300,400],2) --> 700 
     [100,200,300] is a subarray but [100,300] is not
 */
-const log = (object) => {
-    return console.log(object)
-}
 
 let arr = [1, 4, 2, 10, 23, 3, 1, 0, 20]
 let n = 4
@@ -42,10 +40,10 @@ function maxSubarraySum(...args) {
     // log(maxSum)
     /* Start at "n" position and slide through */
     for (let i = n; i < arr.length; i++){
-        log(`sliding moving past ${arr[i - n]}`)
-        log(`array of i is: ${arr[i]} `)
+        c.log(`sliding moving past ${arr[i - n]}`)
+        c.log(`array of i is: ${arr[i]} `)
         tempSum = tempSum - arr[i - n] + arr[i]
-        log(tempSum + '\n')
+        c.log(tempSum + '\n')
         maxSum = Math.max(maxSum, tempSum)
         /* or */
         // if (tempSum > maxSum) {

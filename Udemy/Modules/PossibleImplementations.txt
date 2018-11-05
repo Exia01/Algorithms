@@ -1,0 +1,5 @@
+List of possible modules or "Packages" to have code reusability 
+
+ 
+        -Dictionary creator                             -
+            *SeeAreThereDuplicates.js
