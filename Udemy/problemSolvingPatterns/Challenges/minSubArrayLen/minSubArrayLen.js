@@ -10,9 +10,10 @@ If there isn't one return 0 instead.
 */
 
 let regex = require('../../../Modules/Regex');
-let arr = [2, 3, 1, 2, 4, 3]; //2
+// let arr = [2, 3, 1, 2, 4, 3]; //2
+let arr = [3,1,7,11,2,9,8,21,62,33,19]; // 1
 ///should have temp which will hold 1,2,4 orginally
-let target = 7;
+let target = 52;
 
 function minSubArrayLen(...args) {
   let length = arr.length;
