@@ -14,8 +14,8 @@ const letterValidation = (object) => {
 
 const stringValidation = (object) => {
     //check object is string
-    console.log(object)
-    if (!typeof object == String) {
+    // console.log(object)
+    if (typeof object !== 'string') {
         throw new Error('Please provide a string. Can\'t be numbers')
     }
 }
