@@ -18,3 +18,16 @@ Double Vision
 Count Positives
     - Given array of numbers, create a function to replace last value with a number of positive values
     - Example: countPositives([-1,1,1,1]) --> [-1,1,1,3]
+
+Even and Odds
+    - Create a function that accepts an array. Every time that array has three odd values in a row, print "That's odd"
+    - Every time the array has three evens in a row, print "even more so!" 
+
+Increment the seconds
+    - given array, add 1 to ood elements([1], [3])
+
+Previous Lengths
+    - You are passed an array containing strings.
+    - working within the same, replace each string with a number - the length of the string at previous array index and return the array. 
+
+    
