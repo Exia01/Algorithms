@@ -31,3 +31,7 @@ Previous Lengths
     - working within the same, replace each string with a number - the length of the string at previous array index and return the array. 
 
     
+Adding Seven to Most
+    - Build a function that accepts an array
+    - Return a new array with all values except firs, adding 7 to each. 
+    - Do not alter the original array

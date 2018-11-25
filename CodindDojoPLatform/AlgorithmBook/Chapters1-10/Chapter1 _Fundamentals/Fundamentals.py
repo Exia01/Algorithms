@@ -108,13 +108,28 @@ def evenAndOdds(_arr1):
 
 print(evenAndOdds(_arr1))
 
-_arr2 = [1,2,4,6,7,8,9]
+_arr2 = [1, 2, 4, 6, 7, 8, 9]
+
+
 def incrementTheSeconds(_arr2):
     for num in range(len(_arr2)):
         if _arr2[num] % 2 != 0:
-            _arr2[num] = _arr2[num] +1
-    
+            _arr2[num] = _arr2[num] + 1
+
     return _arr2
 
+
 print(incrementTheSeconds(_arr2))
+
+_arr3 = ['test', 'hello', 'world']
+
+
+def previousLengths(_arr3):
+    for num in range(len(_arr3)):
+        _arr3[num] = len(_arr3[num])
+
+    return _arr3
+
+print(previousLengths(_arr3))
+
 
