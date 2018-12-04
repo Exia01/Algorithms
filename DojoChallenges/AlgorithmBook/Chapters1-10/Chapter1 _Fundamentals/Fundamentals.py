@@ -130,6 +130,36 @@ def previousLengths(_arr3):
 
     return _arr3
 
+
 print(previousLengths(_arr3))
 
+_arr4 = [1, 2, 3, 4, 5, 6]
 
+
+def sevenToMost(_arr4):
+    results = []
+    for num in range(1, len(_arr4)):
+        results.append(_arr4[num]+7)
+
+    return results
+
+
+print(sevenToMost(_arr4))
+
+
+def reverseArray(arr):
+    tmp = 0
+    endPoint = len(arr)-1
+    for num in range(0, len(arr) // 2):
+        temp = arr[num]
+        arr[num] = arr[endPoint]
+        arr[endPoint] = temp
+        endPoint -= 1
+
+    return arr
+
+
+print(reverseArray([3, 1, 6, 4, 2]))
+
+
+def outlookNegative(arr):

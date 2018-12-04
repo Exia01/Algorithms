@@ -30,8 +30,17 @@ Previous Lengths
     - You are passed an array containing strings.
     - working within the same, replace each string with a number - the length of the string at previous array index and return the array. 
 
-    
 Adding Seven to Most
     - Build a function that accepts an array
     - Return a new array with all values except firs, adding 7 to each. 
     - Do not alter the original array
+
+Reverse Array
+    - Given array, write a function to reverse values, in place.
+    - Example: reverseArray([3,1,6,4,2])
+        - returns same array, containing [2,4,6,1,3]
+
+Outlook:Negative 
+    - Given an array, create and return a new one containing all the values provided array Negative
+    - Can't just multiply by -1 
+    - Given [1,-3, 5], return [-1,-3,-5]
