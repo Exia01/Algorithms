@@ -44,3 +44,14 @@ Outlook:Negative
     - Given an array, create and return a new one containing all the values provided array Negative
     - Can't just multiply by -1 
     - Given [1,-3, 5], return [-1,-3,-5]
+
+Always Hungry
+    - Create a function that accepts an array
+    - It then prints "yummy" each time the values is equal to "food".
+    - If no array elements are "food" then print "Im hungry" once
+
+Swap towards the center
+    - Given array, swap first and last, third and third to last, etc.
+    - input [true, 42,"Ada", 2, "Pizza"]
+    - Will become ["Pizza", 42, "Ada", 2, true]
+    - Change[1,2,3,4,5,6] to [6,2,4,3,5,1] 

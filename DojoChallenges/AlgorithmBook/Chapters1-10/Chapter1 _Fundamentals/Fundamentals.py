@@ -47,8 +47,8 @@ def printReturnAnother(arr3):
 
 print(printReturnAnother(arr3))
 
-# Double Vision
 
+# Double Vision
 arr4 = [1, 2, 3]
 
 
@@ -163,3 +163,23 @@ print(reverseArray([3, 1, 6, 4, 2]))
 
 
 def outlookNegative(arr):
+    for num in range(len(arr)):
+        temp = arr[num] * 2
+        arr[num] = arr[num] - temp
+
+    return arr
+
+
+print(outlookNegative([1, -3, 5, 9]))
+
+
+def alwaysHungry(arr):
+    if not "food" in arr:
+        return("I'm hungry!!")
+    for item in arr:
+        str(item).lower()
+        if (item == "food" or item == "Food"):
+            print("Yummy!!")
+
+
+print(alwaysHungry([1, 2, "hi", "Hello", "food",6, 3,6,0, "Food"]))
