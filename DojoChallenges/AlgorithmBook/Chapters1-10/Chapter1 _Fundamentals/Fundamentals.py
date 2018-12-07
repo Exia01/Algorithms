@@ -182,4 +182,31 @@ def alwaysHungry(arr):
             print("Yummy!!")
 
 
-print(alwaysHungry([1, 2, "hi", "Hello", "food",6, 3,6,0, "Food"]))
+print(alwaysHungry([1, 2, "hi", "Hello", "food", 6, 3, 6, 0, "Food"]))
+
+# Swap towards the center
+
+
+def towardCenter(arr):
+    tmp = 0
+    endPoint = len(arr)-1
+    for num in range(0, len(arr) // 2, 2):
+        temp = arr[num]
+        arr[num] = arr[endPoint]
+        arr[endPoint] = temp
+        endPoint -= 2
+
+    return arr
+
+
+print(towardCenter([1, 2, 3, 4, 5, 6]))
+
+
+def scaleArray(arr, num):
+    for x in range(len(arr)):
+        arr[x] = arr[x] * num
+
+    return arr
+
+
+print(scaleArray([2, 4, 6, 8, 10], 2))

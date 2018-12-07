@@ -1,3 +1,5 @@
+-- Generally, the functions have the challenge name --
+
 Challenges:
 
 Biggie Size:
@@ -54,4 +56,9 @@ Swap towards the center
     - Given array, swap first and last, third and third to last, etc.
     - input [true, 42,"Ada", 2, "Pizza"]
     - Will become ["Pizza", 42, "Ada", 2, true]
-    - Change[1,2,3,4,5,6] to [6,2,4,3,5,1] 
+    - Change[1,2,3,4,5,6] to [6,2,4,3,5,1]
+
+Scale Array
+     - Function takes an array "arr" and number "num"
+     - Multiply each arr value by num and return the changed arr.
+
