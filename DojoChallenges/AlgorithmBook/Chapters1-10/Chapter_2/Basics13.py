@@ -1,16 +1,17 @@
 def print1tTo255():
-    for x in range(0, 256):  # stops one iteration short
-        print(x)
+        # Using list comprehension
+    newArr = [num for num in range(256)]
+    return newArr
 
 
-print1tTo255()
+print(print1tTo255())
 
 
 def printIntsAndSumTo255():
     num = 0
     while num <= 254:
-        num += 1
         print(num)
+        num += 1
 
 
 printIntsAndSumTo255()
@@ -95,5 +96,35 @@ def minMaxAvg(arr):
 print(minMaxAvg([1, 2, 3, 4, 5, -6, 7, 8, 9, 15]))
 
 
-def swapNegatives():
-    pass
+def swapNegatives(arr):
+        # Using list comprehension
+    newArr = ["Stringy" if num < 0 else num for num in arr]
+    return newArr
+
+
+print(swapNegatives([1, -3, 3, -5, 9]))
+
+
+def squareArrayValues(arr):
+    newArr = [num * num for num in arr]
+    return newArr
+
+
+print(squareArrayValues([1, 2, 3, 5, 8, 9]))
+
+
+def zeroOutArrayNegative(arr):
+    _newArr = [0 if num < 0 else num for num in arr]
+    return _newArr
+
+
+print(zeroOutArrayNegative([-2, -4, -8, 1, 2, 4]))
+
+
+def shiftArrayValuesLeft(arr):
+   del (arr[0])
+   arr.insert(len(arr), 0)
+   return arr
+   
+
+print(shiftArrayValuesLeft([1,2,3,4,5,6]))
