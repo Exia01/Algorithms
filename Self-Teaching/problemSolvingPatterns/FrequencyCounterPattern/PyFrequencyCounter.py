@@ -31,8 +31,8 @@ def frequencyCounter(arr1=None, arr2=None):
 
     # Check for matches
     for num in dic1:
-        # print(dic1[num]) 
-        # print(num) 
+        # print(dic1[num])
+        # print(num)
         if not num ** 2 in dic2:
             return False
         # print(f'current num is: {num}')
@@ -50,3 +50,30 @@ print(frequencyCounter([1, 3, 2, 4, 3], [1, 4, 9, 16, 9]))
 #         dic2[num] += 1
 
 #     print(dict(dic2))
+
+
+def alternative(arr1=None, arr2=None):
+     # Check if arrays are being passed
+    if not arr1 or not arr2:
+        raise Exception('Please provide two arrays to compare')
+
+    if len(arr1) != len(arr2):
+        raise Exception('Lengths are no the same for arrays')
+
+    _newArr = [num for num in arr1]
+    _newArr2 = [num for num in arr2]
+
+    for num in _newArr:  # looking for number, not frequency
+        try:
+            num * num in _newArr2
+            _newArr2.remove(num**2)
+        except:
+            return False
+        finally:
+            # pass
+            print(_newArr2)
+
+    return True
+
+
+print(alternative([1, 3, 2, 4, 3, 8], [1, 4, 9, 16, 9, 18]))
