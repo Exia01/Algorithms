@@ -1,19 +1,28 @@
-arr = [2, 6, 9, 2, 1, 8, 5, 6, 3] # 19
+arr = [2, 6, 9, 2, 1, 8, 5, 6, 3]  # 19
 n = 3
 
+
 def maxSubArraySum(arr, n):
-    tempsum = 0
+    tempSum = 0
     maxSum = 0
 
+    dic = {}
     try:
         n > len(arr)
     except:
-        return null
+        return None
+    for num in range(n):
+        maxSum += arr[num]
+    # print(maxSum)
 
-    for num in len(arr):
-        print(num)
+    tempSum = maxSum
+    for i in range(n, len(arr)):
+        # print(arr[i-n], arr[i], tempSum)
+        tempSum = tempSum - arr[i - n] + arr[i]
+        maxSum = max(maxSum, tempSum)
+        # if (tempSum > maxSum):
+        #     maxSum = tempSum
+    return maxSum
 
-print(maxSubArraySum(arr,n))
 
-
-
+print(maxSubArraySum(arr, n))
