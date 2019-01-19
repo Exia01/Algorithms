@@ -5,7 +5,7 @@ The frequency of the values must be the same
 https://docs.python.org/3/library/collections.html#collections.defaultdict
 
 """
-from collections import defaultdict
+# from collections import defaultdict #potential implementation
 
 
 def frequencyCounter(arr1=None, arr2=None):
@@ -31,8 +31,6 @@ def frequencyCounter(arr1=None, arr2=None):
 
     # Check for matches
     for num in dic1:
-        # print(dic1[num])
-        # print(num)
         if not num ** 2 in dic2:
             return False
         # print(f'current num is: {num}')
@@ -70,10 +68,9 @@ def alternative(arr1=None, arr2=None):
         except:
             return False
         finally:
-            # pass
             print(_newArr2)
 
     return True
 
 
-print(alternative([1, 3, 2, 4, 3, 8], [1, 4, 9, 16, 9, 18]))
+print(alternative([1, 3, 2, 4, 3, 8], [1, 4, 9, 16, 9, 64]))

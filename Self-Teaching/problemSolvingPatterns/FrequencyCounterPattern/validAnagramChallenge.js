@@ -7,17 +7,17 @@ let str2 = 'barfoo'
 
 function validAnagram(str1, str2) {
 
-    /* check if both strings are the same lenght */
-    if (str1.lenght !== str2.lenght) {
+    // check if both strings are the same length 
+    if (str1.length !== str2.length) {
         return false
     }
     
 
-   /*  Here we want to instanciate objects.
+   /*  Here we want to instantiate objects.
     This will enable faster access to each character to compare. */
     let lookup = {}
-    
-    /* if the check passes then we perform a "for of" */
+
+    // if the check passes then we perform a "for of" 
     
     for (let char of str1) {
         lookup[char] = (lookup[char] || 0) + 1
