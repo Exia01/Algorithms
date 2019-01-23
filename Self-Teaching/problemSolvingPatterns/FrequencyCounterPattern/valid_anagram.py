@@ -25,8 +25,8 @@ def validAnagram(string1, string2):
         except KeyError:
             dictionary2[letter] = 1
 
-    print(dictionary2)
-    print(dictionary1)
+    # print(dictionary2)
+    # print(dictionary1)
     # loop through dictionaries
     # for key, value in dictionary1.items():
     #     if not key in dictionary2:
@@ -34,12 +34,11 @@ def validAnagram(string1, string2):
 
     for value in dictionary2:
         item = None
-        print(dictionary1.get(value))
+        # print(dictionary1.get(value))
         try:
             if dictionary1.get(value) == item:
                 raise KeyError 
         except KeyError:
             return False
-
-
-print(validAnagram('Cinemo', 'Iceman'))
+    return True
+print(validAnagram('Cinema', 'Iceman'))
