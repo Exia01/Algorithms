@@ -1,0 +1,8 @@
+pwd --> print working directory. Absolute path where you are. 
+ls + name --> list what's in that folder
+ls -a --> all hidden files 
+ls -l --> longer format 
+
+mkdir --> create a directory can pass as many names as possibles
+touch --> makes a new file
+            - if already create; will change the timestamp
